@@ -115,13 +115,13 @@ resource "aws_instance" "my_first_ec2_DBserver" {
   }
 }
 
-resource "aws_s3_bucket" "my_s3_bucket_demo" {
-  bucket = var.s3_bucket
+# resource "aws_s3_bucket" "my_s3_bucket_demo" {
+#   bucket = var.s3_bucket
 
-  tags = {
-    "Name" = "my_s3_bucket_demo"
-  }
-}
+#   tags = {
+#     "Name" = "my_s3_bucket_demo"
+#   }
+# }
 
 resource "aws_ecr_repository" "my_ecr_repo" {
   name = var.ecr_repo
