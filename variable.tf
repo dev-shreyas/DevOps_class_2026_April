@@ -28,11 +28,11 @@ variable "ec2_size" {
   default = "t3.xlarge"
 }
 
-# variable "s3_bucket" {
-#   type = string
-#   description = "Provide name to s3"
-#   default = "my-s3-demo-bucket-85426357"
-# }
+variable "s3_bucket" {
+  type = string
+  description = "Provide name to s3"
+  default = "my-s3-demo-bucket-85426357"
+}
 
 variable "ecr_repo" {
   type = string
