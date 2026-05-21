@@ -12,6 +12,9 @@ jobs:
   terraform-provisioning:
     runs-on: ubuntu-latest
 
+    environment:
+      name: dev
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
