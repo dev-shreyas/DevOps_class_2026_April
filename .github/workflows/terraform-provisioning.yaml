@@ -1,12 +1,11 @@
 name: Terraform Provisioning (VPC + EC2 + S3 + ECR)
 
-
 on:
   push:
     branches:
       - main
 
-  workflow_dispatch:
+  #workflow_dispatch:
       
 jobs:
   terraform-provisioning:
